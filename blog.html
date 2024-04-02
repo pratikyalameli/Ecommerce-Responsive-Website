@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSpotlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9342f4f92.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <section id="header">
+        <a href="index.html" class="logo">Style<span>Spotlight</span></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><img src="img/cart.png " alt="" srcset=""></a></li>
+                <li><a href="login.html" id="login"><i class="fa-solid fa-user" style="color: white;" font-size=30px;></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark" style="color:black"></i></a>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </section>
+    
+    <section id="page-header" class="blog-header">
+      <h2>#readmore</h2>
+      <p>Read our blogs</p>
+    </section>
+
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b12.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Power of a Suit</h4>
+                <p>Give a woman a well fitted suit and she can conquer the world, or at least feel like she can.</p>
+                <a href="http://harperandharley.com/2019/05/the-power-of-a-suit" target="_blank">Continue Reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Girl Code</h4>
+                <p>In life, there are certain rules we have to abide by. Don’t have the same crush as your bestie. Update her about the latest sale. You know, the important stuff. We all have that BFF we’ll treasure forever. In case you missed some rules, here is your small guide to The Girl Code:
+                </p>
+                <a window href="https://www.faballey.com/blog/the-girl-code" target="_blank">Continue Reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Top 10 Indo Western Dresses</h4>
+                <p>The season of engagements and weddings is already here and it is high time for the women to start looking for the most elegant outfits in order to attain a poised look.</p>
+                <a href="https://www.missprintclothing.com/blogs/news/top-10-trendy-indo-western-dresses-for-engagement" target="_blank">Continue Reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>15 Fashion Bloggers You Should Follow</h4>
+                <p>What's better than knowing what's buzzing in town and upping your fashion game!</p>
+                <a href="https://www.stylecraze.com/articles/best-fashion-blogs/" target="_blank">Continue Reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog/b6.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>16 Healthy Foods To Lose Weight</h4>
+                <p>We explore the topic of healthy eating and weight loss. Losing weight can be a challenging journey, but it doesn't have to be a daunting one. </p>
+                <a href="
+                https://www.forbes.com/health/body/foods-to-eat-to-lose-weight/" target="_blank">Continue Reading</a>
+            </div>
+            <h1>13/01</h1>
+        </div>
+        
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1" >
+        <div class="newstext">
+            <h4>Sign Up For News</h4>
+            <p>Get Email Updates For Special Offers</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <script>
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            })
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            })
+        }
+    </script>
+</body>
+</html>
